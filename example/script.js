@@ -1,4 +1,4 @@
-import scrollObserver from '../index.js'
+import scrollObserver from 'https://codeabinash.github.io/scroll-observer/index.min.js'
 
 
 

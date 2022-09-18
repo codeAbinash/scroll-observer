@@ -1,5 +1,5 @@
 # Scroll Observer
-![Image](https://img.shields.io/github/size/codeabinash/scroll-observer/index.js)
+![Image](https://img.shields.io/github/size/codeabinash/scroll-observer/index.min.js)
 ![Image](https://img.shields.io/github/license/codeabinash/scroll-observer)
 
 ## Introduction
@@ -151,7 +151,7 @@ body{
 
 ### script.js
 ```js
-import scrollObserver from '../index.js'
+import scrollObserver from 'https://codeabinash.github.io/scroll-observer/index.js'
 scrollObserver('.card')
 ```
 
