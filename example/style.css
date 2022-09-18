@@ -1,0 +1,31 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+
+.card{
+    width: min(90%, 500px);
+    aspect-ratio: 2 / 1;
+    margin-inline: auto;
+    background-color: hsl(61, 70%, 70%);
+    display: grid;
+    place-items: center;
+    margin-block: 7%;
+    border-radius: 10px;
+    transition: 400ms;
+}
+
+.card:nth-child(2n){
+    translate: 100%;
+    opacity: 0;
+}
+.card:nth-child(2n + 1){
+    translate: -100%;
+    opacity: 0;
+}
+.card.shown {
+    translate: 0;
+    opacity: 1;
+}
