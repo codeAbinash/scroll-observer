@@ -128,10 +128,6 @@ Read them from [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Inter
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    overflow-x: hidden;
-}
-
 .card{
     width: min(90%, 500px);
     aspect-ratio: 2 / 1;
@@ -142,19 +138,12 @@ body{
     margin-block: 7%;
     border-radius: 10px;
     transition: 400ms;
-}
-
-.card:nth-child(2n){
-    translate: 100%;
     opacity: 0;
-}
-.card:nth-child(2n + 1){
-    translate: -100%;
-    opacity: 0;
+    scale: 0.8;
 }
 .card.shown {
-    translate: 0;
     opacity: 1;
+    scale: 1;
 }
 ```
 
