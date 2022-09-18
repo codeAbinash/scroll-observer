@@ -2,6 +2,9 @@
 ![Image](https://img.shields.io/github/size/codeabinash/scroll-observer/index.min.js)
 ![Image](https://img.shields.io/github/license/codeabinash/scroll-observer)
 
+<img src="https://codeabinash.github.io/scroll-observer/images/logo.png" width="100%">
+
+
 ## Introduction
 ScrollObserver A lightweight⚡(less than 1KB) JavaScript library to animate easily elements on scroll into view.
 ## How it works
