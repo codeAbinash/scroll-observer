@@ -2,7 +2,7 @@
 ![Image](https://img.shields.io/github/size/codeabinash/scroll-observer/index.min.js)
 ![Image](https://img.shields.io/github/license/codeabinash/scroll-observer)
 
-<img src="https://codeabinash.github.io/scroll-observer/images/logo.png" width="100%">
+<img src="https://codeabinash.github.io/scroll-observer/images/logo.jpg" width="100%">
 
 
 ## Introduction
