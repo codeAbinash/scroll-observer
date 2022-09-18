@@ -3,7 +3,7 @@
 ![Image](https://img.shields.io/github/license/codeabinash/scroll-observer)
 
 ## Introduction
-ScrollObserver A JavaScript library to animate easily elements on scroll into view.
+ScrollObserver A lightweight⚡(less than 1KB) JavaScript library to animate easily elements on scroll into view.
 ## How it works
 When a DOM element is onscreen it adds `shown` class to it and when offscreen removes that `shown` class.
 ## How to use
@@ -12,6 +12,12 @@ scrollObserver('.card')
 ```
 
 The above JavaScript code adds and removes the `shown` class to the elements which have `card` class (select elements like `querySelectorAll()`) when they are onscreen and offscreen respectively.
+
+
+You can pass multiple selectors as an array of string.
+```js
+scrollObserver(['.card', '.box'])
+```
 
 
 ## CSS
@@ -151,7 +157,7 @@ body{
 
 ### script.js
 ```js
-import scrollObserver from 'https://codeabinash.github.io/scroll-observer/index.js'
+import scrollObserver from 'https://codeabinash.github.io/scroll-observer/index.min.js'
 scrollObserver('.card')
 ```
 
