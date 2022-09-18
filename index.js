@@ -9,23 +9,25 @@ export default function scrollObserver(selector, option) {
     let showCount = 0
     let observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (option?.once) {
-                if (showCount === 0 && entry.isIntersecting) {
-                    entry.target.classList.add('shown')
-                    option.onshow ? option.onshow(entry) : false
-                    showCount++
-                }
-            }
-            else {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('shown')
-                    if (option && option.onshow) option.onshow(entry)
+            window.requestIdleCallback(() => {
+                if (option?.once) {
+                    if (showCount === 0 && entry.isIntersecting) {
+                        entry.target.classList.add('shown')
+                        option.onshow ? option.onshow(entry) : false
+                        showCount++
+                    }
                 }
                 else {
-                    entry.target.classList.remove('shown')
-                    if (option && option.onhide) option.onhide(entry)
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('shown')
+                        if (option && option.onshow) option.onshow(entry)
+                    }
+                    else {
+                        entry.target.classList.remove('shown')
+                        if (option && option.onhide) option.onhide(entry)
+                    }
                 }
-            }
+            })
         })
     }, option)
 
