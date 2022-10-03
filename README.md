@@ -4,6 +4,8 @@
 
 <img src="https://codeabinash.github.io/scroll-observer/images/logo.jpg" width="100%">
 
+# [Live Example](https://codeabinash.github.io/scroll-observer/example/)
+
 
 ## Introduction
 ScrollObserver A lightweight⚡(less than 1KB) JavaScript library to animate easily elements on scroll into view.
@@ -152,5 +154,3 @@ Read them from [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Inter
 import scrollObserver from 'https://codeabinash.github.io/scroll-observer/index.min.js'
 scrollObserver('.card')
 ```
-
-See above example [Live](https://codeabinash.github.io/scroll-observer/example/)

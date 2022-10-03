@@ -1,7 +1,10 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
-.card{
+
+.card {
     width: min(90%, 500px);
     aspect-ratio: 2 / 1;
     margin-inline: auto;
@@ -13,7 +16,34 @@
     transition: 400ms;
     opacity: 0;
     scale: 0.8;
+    padding: 20px;
 }
+
+.card:nth-child(1){
+    background-color: hsl(61, 70%, 70%) ;
+}
+.card:nth-child(2){
+    background-color: hsl(22, 70%, 70%) ;
+}
+.card:nth-child(3){
+    background-color: hsl(241, 70%, 70%) ;
+}
+.card:nth-child(4){
+    background-color: hsl(123, 70%, 70%) ;
+}
+.card:nth-child(5){
+    background-color: hsl(0, 70%, 70%) ;
+}
+.card:nth-child(6){
+    background-color: hsl(234, 70%, 70%) ;
+}
+.card:nth-child(7){
+    background-color: hsl(61, 70%, 70%) ;
+}
+.card:nth-child(7){
+    background-color: hsl(182, 70%, 70%) ;
+}
+
 .card.shown {
     opacity: 1;
     scale: 1;
