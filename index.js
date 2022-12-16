@@ -6,10 +6,10 @@
 
 
 export default function scrollObserver(selector, option) {
-    let showCount = 0
     let observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             window.requestIdleCallback(() => {
+                let showCount = 0
                 if (option?.once) {
                     if (showCount === 0 && entry.isIntersecting) {
                         entry.target.classList.add('shown')
